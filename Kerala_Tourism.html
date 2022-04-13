@@ -26,11 +26,11 @@
 <body oncontextmenu='return false' class='snippet-body'>
 
     <!-- Navbar begins Here -->
-    <nav class="my-nav navbar navbar-expand-lg navbar-light bg-secondary opacity-100 ">
+    <nav class="my-nav navbar navbar-expand-lg navbar-light opacity-100">
         <div class="container-fluid">
             <!-- <a class="navbar-brand p-0 me-0 ms-0 m" href="#"><img src="./Kerala_Tourism/kerala-tourism-title (1).png" class="img-fluid rounded float-left" style="width: 50%;" alt=""></a> -->
-            <img src="./Kerala_Tourism/kerala-tourism-title (1).png" class="img-fluid rounded float-left"
-                style="width: 10%;" alt="">
+            <img src="./Kerala_Tourism/LOGO.png" class=""
+                style="width: 5%;" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -56,32 +56,64 @@
                     <li class="nav-item">
                         <a class="nav-link  text-white" href="#"><B>E BROCHURES</B></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-white" href="#"><B>E NEWSLETTER</B></a>
-                    </li>
-                    <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li> -->
-                    <!-- <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li> -->
+
+                    <!-- Log In Section Begins -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success text-dark fs-4 fw-bolder" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        Log In
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-success">
+                                    <h1><b class="text-white">Log In Form</b></h1>
+                                    <button type="button" class="close bg-danger" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="container m-3 p-5 text-light fs-3 fw-bold mx-auto md_ln">
+                                    <!-- Sign Up Section -->
+                                    <p>Not a member? Please <a href="./SignUpPage.html" target="_blank"> Sign Up</a></p>
+                                    <form action="./Kasargod.html" onsubmit="return validate()">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12 font-weight-normal">
+                                                <label for="inputEmail4">Email - Standard Format</label>
+                                                <input type="email" class="form-control w-100" id="inputEmail4"
+                                                    placeholder="Email" required>
+                                                <!-- <label for="email" id="error"></label> -->
+                                            </div>
+                                            <div class="form-group col-md-12 font-weight-normal">
+                                                <label for="inputPassword4">Password - Alphanumeric 8 digits</label>
+                                                <input type="password" class="form-control w-100" id="inputPassword4" 
+                                                    placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label font-weight-normal" for="gridCheck">
+                                                    Remember me &emsp; <a href="./resetPassword.html"
+                                                        target="_blank">forgot password</a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn fs-3 fw-bold" id="submit"> Log
+                                            In</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary" type="submit"><b>Search</b></button>
-                </form>
             </div>
         </div>
     </nav>
     <!-- Navbar Ends Here -->
+    <script src="formValidation.js"></script>
 
     <!-- Carousel Begins Here -->
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -147,15 +179,13 @@
                 </div>
                 <div class="col-12">
                     <div id="carouselExampleIndicators2" class="carousel slide carousel-fade" data-ride="carousel">
-
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="row">
-
+                                <div class="row" style="height: auto;">
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
-                                                src="./Kerala_Tourism/Kasargod/194149603_ae1515bd54_o.jpg">
+                                                src="./Kerala_Tourism/Bekal Fort.jpg">
                                             <div class="card-body">
                                                 <a href="./Kasargod.html" target="_blank">
                                                     <h4 class="card-title">Kasaragod</h4>
@@ -169,7 +199,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Palakkayam Thattu.webp">
                                             <div class="card-body">
@@ -187,7 +217,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Edakkal caves.webp">
                                             <div class="card-body">
@@ -208,7 +238,7 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Thikkoti Lighthouse.jpg">
                                             <div class="card-body">
@@ -226,7 +256,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Kodikuthimala.jpg">
                                             <div class="card-body">
@@ -242,7 +272,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Parambikulam Wildlife Sanctuary.jpg">
                                             <div class="card-body">
@@ -266,7 +296,7 @@
                                 <div class="row">
 
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Athirappilly Waterfalls.jpg">
                                             <div class="card-body">
@@ -284,7 +314,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Synagogue.webp">
                                             <div class="card-body">
@@ -300,7 +330,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Idukki Arch Dam.jpg">
                                             <div class="card-body">
@@ -322,7 +352,7 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Kuttanad Backwaters.webp">
                                             <div class="card-body">
@@ -340,7 +370,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Vagamon.jpg">
                                             <div class="card-body">
@@ -356,7 +386,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Kakki Reservoir.jpg">
                                             <div class="card-body">
@@ -376,7 +406,7 @@
                                 <div class="row">
 
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Kollam Adventure Park.jpg">
                                             <div class="card-body">
@@ -394,7 +424,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                        <div class="card" style="height: 600px;">
+                                        <div class="card">
                                             <img class="img-fluid" alt="100%x280" style="height: 250px;"
                                                 src="./Kerala_Tourism/Agasthyakoodam.webp">
                                             <div class="card-body">
@@ -420,7 +450,7 @@
         </div>
     </section>
     <script type='text/javascript'></script>
-<!-- 14 Districts Ends -->
+    <!-- 14 Districts Ends -->
 
     <!-- Top Destination Section Begins -->
     <div class="top_destinations">
@@ -534,13 +564,11 @@
     </div>
     <!-- Top Destination Section Ends -->
 
-
     <!-- Things to do Section Begins -->
     <div class="Things_to_do_in_Kerala">
         <br><br>
         <h2>Things to do in Kerala</h2><br>
         <div class="container_fluid t1">
-
             <div class="row">
                 <div class="col-md-4">
                     <div class="content"> <a href="#">
@@ -615,7 +643,7 @@
     <!-- Things to do Section Ends -->
 
     <!-- grid photo gallery begins -->
-    <div class="row photo_gallery ">
+    <div class="row photo_gallery">
         <h2>Explore Photo Gallery</h2>
         <div class="col-lg-2">
             <img src="./Kerala_Tourism/Beaches.jpg" alt="">
@@ -663,14 +691,14 @@
             <p>Backwaters</p>
         </div>
         <div class="col-lg-2">
-            <img src="./Kerala_Tourism/kuthira-malika-2.jpg" alt="">
-            <p>Kuthira Malika</p>
+            <img src="./Kerala_Tourism/Beaches.jpg" alt="">
+            <p>Beaches</p>
         </div>
     </div>
     <!-- grid photo gallery Ends -->
 
-      <!-- Plan your Trip begins -->
-      <div class="container_fluid plan_your_trip2">
+    <!-- Plan your Trip begins -->
+    <div class="container plan_your_trip2">
         <div class="row">
             <h2>Plan Your Trip</h2>
             <div class="col-lg-2">
@@ -702,7 +730,7 @@
             <div class="col-lg-3"></div>
             <div class="search_box col-lg-6">
                 <p>Search for Accomodation&emsp;</p>
-                <div class="topnav">
+                <br><div class="topnav">
                     <input type="text" placeholder="Search.."> <button class="btn btn-secondary"
                         type="button"><b>Search</b></button>
                 </div>
@@ -712,27 +740,27 @@
     </div>
     <!-- Plan your Trip Ends-->
 
-   <!-- Footer Section Begins -->
-        <div class="row bottom_section bg-secondary">
-            <div class="col-lg-4 left">
-                <p>Subscribe Our Newsletters</p>
-                <p>Get notified to Kerala Tourism events and activities</p>
-            </div>
-            <div class="col-lg-4 middle">
-                <p>For Business/Trade/Classifications and Tenders please visit</p>
-                <h3>www.keralatourism.gov.in</h3>
-            </div>
-            <div class="col-lg-4 right">
-                <h3>Connect with us</h3>
-                <i class="fa-brands fa-pinterest-square fa-2x"></i>
-                <i class="fa-brands fa-instagram-square fa-2x"></i>
-                <i class="fa-brands fa-facebook-square fa-2x"></i>
-                <i class="fa-brands fa-whatsapp-square fa-2x"></i>
-                <i class="fa-brands fa-twitter-square fa-2x"></i>
-                <i class="fa-brands fa-youtube-square fa-2x"></i>
-                <i class="fa-brands fa-linkedin fa-2x"></i>
-            </div>
+    <!-- Footer Section Begins -->
+    <div class="row bottom_section bg-danger">
+        <div class="col-lg-4 left">
+            <p>Subscribe Our Newsletters</p>
+            <p>Get notified to Kerala Tourism events and activities</p>
         </div>
+        <div class="col-lg-4 middle">
+            <p>For Business/Trade/Classifications and Tenders please visit</p>
+            <h3>www.keralatourism.gov.in</h3>
+        </div>
+        <div class="col-lg-4 right">
+            <h3>Connect with us</h3>
+            <i class="fa-brands fa-pinterest-square fa-2x"></i>
+            <i class="fa-brands fa-instagram-square fa-2x"></i>
+            <i class="fa-brands fa-facebook-square fa-2x"></i>
+            <i class="fa-brands fa-whatsapp-square fa-2x"></i>
+            <i class="fa-brands fa-twitter-square fa-2x"></i>
+            <i class="fa-brands fa-youtube-square fa-2x"></i>
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+        </div>
+    </div>
     <!-- Footer Section Ends -->
 
 </body>
